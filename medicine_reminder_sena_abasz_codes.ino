@@ -57,13 +57,13 @@ void loop() {
   Serial.println(myRTC.seconds);                         //Saniyeyi ekrana gönderiyoruz
   delay(1000);//1 saniye bekle
   
-  if (myRTC.hours== 22 && myRTC.minutes== 19 && button_d == 0 ){
+  if (myRTC.hours== 8 && myRTC.minutes== 00 && button_d == 0 ){
   digitalWrite(2,HIGH);
    delay(5);
    digitalWrite(2,LOW);
    delay(5);
   } 
- if (myRTC.hours== 22 && myRTC.minutes== 19  && myRTC.seconds == 15){
+ if (myRTC.hours== 8 && myRTC.minutes== 00  && myRTC.seconds == 15){
  for( i = 0; i <= 180; i++) {
     servo_1.write(i);
     delay(2);
@@ -73,7 +73,7 @@ void loop() {
     delay(2);
    }
 }
-if(myRTC.hours== 22 && myRTC.minutes== 19 && button_d == 1){
+if(myRTC.hours== 8 && myRTC.minutes== 00 && button_d == 1){
   digitalWrite(2,LOW);
 }
 
